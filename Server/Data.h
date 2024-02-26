@@ -10,15 +10,8 @@
 #include <fstream>
 #include "shellapi.h"
 
-#include "json.hpp"
-
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable: 4996)
-
-#define	C_SERVER			"C:\\Server"			// директория сервера
-#define C_SERVER_USERS		"C:\\Server\\Users"		// директория пользователей (персонала)
-#define C_SERVER_MENU		"C:\\Server\\Menu"		// директория меню блюд
-#define C_SERVER_CLIENTS	"C:\\Server\\Clients"	// директория клиентов
 
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
