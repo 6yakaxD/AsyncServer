@@ -1,3 +1,12 @@
+/**
+ * @date        19-12-2023
+ * @brief       Casuall template of Boost
+ *              c++ async tcp server for
+ *              using in projects
+ * @author      Ramil
+ * @copyright   (C) 2023 by not commercial
+ */
+
 #include "Server.h"
 
 
@@ -21,7 +30,13 @@ void Server::HandleClient(std::shared_ptr<ip::tcp::socket> socket)
       try
       {
         std::cout << "[Server]: New client connected IP -> " << socket->remote_endpoint();
-        g_data.COUT_CurrTime();
+        time_t currentTime = time(0);
+        struct tm* localTime = localtime(&currentTime);
+        std::cout << ", date -> " << localTime->tm_year + 1900
+          << "-" << localTime->tm_mon + 1 << "-" << localTime->tm_mday
+          << " | " << localTime->tm_hour << ":" << localTime->tm_min
+          << ":" << localTime->tm_sec << std::endl;
+
 
         while (true)
         {

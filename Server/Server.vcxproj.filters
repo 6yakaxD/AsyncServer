@@ -18,9 +18,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Data.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="Server.h">
       <Filter>src\server</Filter>
     </ClInclude>

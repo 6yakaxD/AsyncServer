@@ -1,21 +1,25 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <iomanip>
+/**
+ * @date        19-12-2023
+ * @brief       Casuall template of Boost
+ *              c++ async tcp server for
+ *              using in projects
+ * @author      Ramil
+ * @copyright   (C) 2023 by not commercial
+ */
+
+/*-------------------------[ Boost ]---------------------------*/
 #include <boost/asio.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
+
+/*-------------------------[ Other ]--------------------------*/
+#include <iostream>
 #include <vector>
 #include <string>
 #include <thread>
-#include "shellapi.h"
-
-#include "Data.h"
 
 #define _CRT_SECURE_NO_WARNINGS
-
 #pragma warning (disable : 4996)
-
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
 
 using namespace boost::asio;
 
